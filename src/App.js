@@ -25,28 +25,28 @@ class App extends React.Component {
       anime: "",
     },
   };
-  /*metodo de mostrar el registro actualizar */
+  /*funsion de mostrar el registro actualizar */
   mostrarModalActualizar = (dato) => {
     this.setState({
       form: dato,
       modalActualizar: true,
     });
   };
-  /*metodo de cerrar la actualizacion del registro*/
+  /*funsion de cerrar la actualizacion del registro*/
   cerrarModalActualizar = () => {
     this.setState({ modalActualizar: false });
   };
-  /*metodo de mostrar modal insertar registro*/
+  /*funsion de mostrar modal insertar registro*/
   mostrarModalInsertar = () => {
     this.setState({
       modalInsertar: true,
     });
   };
-  /*metodo de cerrar el  modal de insertar registro*/
+  /*funsion de cerrar el  modal de insertar registro*/
   cerrarModalInsertar = () => {
     this.setState({ modalInsertar: false });
   };
-  
+
   editar = (dato) => {
     var contador = 0;
     var arreglo = this.state.data;
